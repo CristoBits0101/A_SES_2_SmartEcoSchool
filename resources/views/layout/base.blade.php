@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     @yield('css')
+    <link rel="stylesheet" href="{{ asset('assets/css/header.css') }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" />
 </head>
 

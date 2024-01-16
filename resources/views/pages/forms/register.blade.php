@@ -10,7 +10,7 @@
 
     <main>
         <img id="SmartEcoSchool" src="{{ asset('assets/images/SmartEcoSchool.png') }}" alt="Proyecto SmartEcoSchool" />
-        <form action="{{ route('users.store') }}" method="post">
+        <form action="{{ route('users.store') }}" method="post" id="forms-style">
             @csrf
             <div>
                 <label for="name">Nombre:</label>
