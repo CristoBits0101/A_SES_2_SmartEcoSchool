@@ -33,7 +33,7 @@ class AuthController extends Controller
         ]);
 
         // Después de registrar a un usuario, se redirecciona a la página de login y le comunica que fue registrado correctamente.
-        return redirect()->route('graphics.home')->with('success', '¡Usuario creado exitosamente!');
+        return redirect()->route('graphics.table')->with('success', '¡Usuario creado exitosamente!');
     }
 
     /**
@@ -126,9 +126,9 @@ class AuthController extends Controller
 
         // Se intenta autentificar al usuario.
         // Redirect intentará enviar al usuario a la página que intento entrar antes de ser redirigido a login.
-        // Si no puede ir a la página que intento entrar antes de ir a login lo reenviará a home.
+        // Si no puede ir a la página que intento entrar antes de ir a login lo reenviará a la página de table.
         if (Auth::attempt($credentials))
-            return redirect()->intended(route('graphics.home'));
+            return redirect()->intended(route('graphics.table'));
 
         // Te devuelve al formulario de login si no te puedes autentificar.
         return back()->withErrors(['error' => '¡Las credenciales proporcionadas no son válidas!']);

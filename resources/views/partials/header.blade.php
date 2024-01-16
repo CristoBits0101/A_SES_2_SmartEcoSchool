@@ -4,11 +4,16 @@
     </div>
     <nav>
         <ul>
-            <li><a href="{{ route('graphics.home') }}">Home</a></li>
-            <li><a href="">Link 2</a></li>
-            <li><a href="">Link 3</a></li>
-            <li><a href="">Link 4</a></li>
-            <li><a href="">Link 5</a></li>
+            <li>
+                <a href="{{ route('graphics.table') }}">
+                    <img src="{{ asset('assets/images/icons/table.png') }}" />
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('graphics.bar') }}">
+                    <img src="{{ asset('assets/images/icons/statistics.png') }}" />
+                </a>
+            </li>
         </ul>
     </nav>
     <div id="control-panel">

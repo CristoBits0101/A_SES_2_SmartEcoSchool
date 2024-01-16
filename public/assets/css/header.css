@@ -1,10 +1,13 @@
 header {
     background: linear-gradient(#002c5355, #002c5350, #002c5345);
-    padding: 0.5rem;
     display: flex;
     position: sticky;
     top: 0rem;
     z-index: 10;
+}
+
+img {
+    max-width: 2rem;
 }
 
 h1 {
