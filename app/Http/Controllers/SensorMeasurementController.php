@@ -12,6 +12,6 @@ class SensorMeasurementController extends Controller
     public function home()
     {
         // Retorna un formulario que permite crear a un usuario administrador.
-        return view('pages.graphics.home', compact('chart'));
+        return view('pages.graphics.home');
     }
 }

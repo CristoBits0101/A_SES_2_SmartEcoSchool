@@ -3,16 +3,12 @@
 @section('title', 'Bienvenido a SmartEcoSchool')
 
 @section('css')
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/forms.css') }}" /> --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/forms.css') }}" />
 @endsection
 
 @section('content')
 
-    <h1>H O M E</h1>
-
-    <div>
-        {!! $chart->render() !!}
-    </div>    
+    <h2>H O M E</h2>
 
     @if(session('success'))
         <script>

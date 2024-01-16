@@ -16,8 +16,8 @@ Route::get('/'      , [AuthController::class, 'authentication'])->name('users.au
 Route::post('/login', [AuthController::class, 'login'         ])->name('users.login'         );
 
 // Grupo de rutas que requieren autenticación.
-Route::group(['middleware' => 'auth'], function () 
-{
+// Route::group(['middleware' => 'auth'], function () 
+// {
     // User views.
     Route::get(   '/users/register' , [AuthController::class,              'create' ])->name('users.create' );
     Route::get(   '/users/{id}/edit', [AuthController::class,              'edit'   ])->name('users.edit'   );
@@ -33,4 +33,4 @@ Route::group(['middleware' => 'auth'], function ()
 
     // Graph views.
     Route::get(   '/graphics/home'  , [SensorMeasurementController::class, 'home'   ])->name('graphics.home');
-});
+// });
