@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-// use Illuminate\Http\Request;
+use App\Models\SensorMeasurement;
 
 class SensorMeasurementController extends Controller
 {
@@ -11,7 +11,10 @@ class SensorMeasurementController extends Controller
      */
     public function home()
     {
-        // Retorna un formulario que permite crear a un usuario administrador.
-        return view('pages.graphics.home');
+        // Obtener todas las mediciones de los sensores
+        $sensorMeasurements = SensorMeasurement::all();
+
+        // Retorna la página de inicio y le pasa los datos de las mediciones como variable sensorMeasurements.
+        return view('pages.graphics.home', compact('sensorMeasurements'));
     }
 }

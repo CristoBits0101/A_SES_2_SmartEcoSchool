@@ -128,7 +128,7 @@ class AuthController extends Controller
         // Redirect intentará enviar al usuario a la página que intento entrar antes de ser redirigido a login.
         // Si no puede ir a la página que intento entrar antes de ir a login lo reenviará a home.
         if (Auth::attempt($credentials))
-            return redirect()->intended('pages.graphics.home');
+            return redirect()->intended(route('graphics.home'));
 
         // Te devuelve al formulario de login si no te puedes autentificar.
         return back()->withErrors(['error' => '¡Las credenciales proporcionadas no son válidas!']);
@@ -143,6 +143,6 @@ class AuthController extends Controller
         Auth::logout();
 
         // Te redirige a la página de inicio de sesión porque si no estás autenticado, no puedes acceder a las vistas.
-        return redirect('pages.forms.login');
+        return redirect()->route('users.authentication');
     }
 }
