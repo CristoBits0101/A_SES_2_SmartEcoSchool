@@ -32,7 +32,7 @@ Route::group(['middleware' => 'auth'], function ()
     Route::post(  '/users/logout'   , [AuthController::class,              'logout' ])->name('users.logout' );
 
     // Graph views.
-    Route::get('/graphics/table', [SensorMeasurementController::class, 'table'])->name('graphics.table');
-    Route::get('/graphics/bar',   [SensorMeasurementController::class,  'bar' ])->name('graphics.bar');
+    Route::get('/graphics/table'    , [SensorMeasurementController::class, 'table'  ])->name('graphics.table');
+    Route::get('/graphics/bar'      , [SensorMeasurementController::class,  'bar'   ])->name('graphics.bar');
 
 });

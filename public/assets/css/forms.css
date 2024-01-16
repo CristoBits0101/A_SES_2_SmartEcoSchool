@@ -60,7 +60,11 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-img {
+.smart-eco-school {
     max-width: 10rem;
     margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
 }

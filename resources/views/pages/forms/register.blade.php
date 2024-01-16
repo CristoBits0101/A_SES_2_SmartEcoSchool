@@ -9,7 +9,7 @@
 @section('content')
 
     <main>
-        <img id="SmartEcoSchool" src="{{ asset('assets/images/SmartEcoSchool.png') }}" alt="Proyecto SmartEcoSchool" />
+        <img id="SmartEcoSchool" class="smart-eco-school" src="{{ asset('assets/images/logos/SmartEcoSchool.png') }}" alt="Proyecto SmartEcoSchool" />
         <form action="{{ route('users.store') }}" method="post" id="forms-style">
             @csrf
             <div>
@@ -41,6 +41,16 @@
             </div>
             <input type="submit" value="Registrarse"/>
         </form>
+        <!-- Agrega un enlace para ir a la página de inicio de sesión -->
+        <p>
+            ¿Ya tienes una cuenta?
+            <br />
+            <br />
+            <a href="{{ route('users.authentication') }}">
+                👉 Inicia sesión aquí
+            </a>
+        </p>
+        </main>
     </main>
 
 @endsection

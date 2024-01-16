@@ -9,7 +9,7 @@
 @section('content')
 
     <main>
-        <img id="SmartEcoSchool" src="{{ asset('assets/images/SmartEcoSchool.png') }}" alt="Proyecto SmartEcoSchool" />
+        <img id="SmartEcoSchool" class="smart-eco-school" src="{{ asset('assets/images/logos/SmartEcoSchool.png') }}" alt="Proyecto SmartEcoSchool" />
         <form action="{{ route('users.login') }}" method="post" id="forms-style">
             @csrf
             <div>
@@ -32,6 +32,15 @@
             </div>
             <input type="submit" value="Loguearse"/>
         </form>
+
+        <!-- Agrega un enlace para ir a la página de registro -->
+        <p>¿No tienes una cuenta? 
+            <br />
+            <br />
+            <a href="{{ route('users.create') }}">
+                👉 Regístrate aquí
+            </a>
+        </p>
     </main>
 
     <!-- Si alguien intento acceder a la app sin autenticarse, se le comunica que está prohibido -->
