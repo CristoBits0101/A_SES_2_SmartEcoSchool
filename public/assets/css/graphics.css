@@ -14,7 +14,7 @@ input {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: #0b373f;
-    color: #fafafa;
+    color: #FAFAFA;
     font-weight: bold;
 }
 
@@ -33,38 +33,24 @@ table {
 }
 
 thead {
-    background-color: rgba(75, 192, 192, 0.2);
-    border-color: rgba(75, 192, 192, 1);
-    color: white;
+    background-color: #86D3D3;
+    border: 0.15rem solid #86D3D3;
+    color: #0b373f;
 }
 
-/* Estilo para las celdas del encabezado */
 th {
     padding: 10px;
 }
 
-/* Estilo para las filas de la tabla */
 tbody tr {
-    background-color: #ecf0f1; /* Color de fondo de las filas alternas */
+    background-color: #D7EEEE;
 }
 
-/* Estilo para las celdas de la tabla */
 td {
-    padding: 10px;
-    border: 1px solid #bdc3c7; /* Borde de las celdas */
+    padding: 0.5rem;
+    border: 0.15rem solid #86D3D3;
 }
 
-/* Estilo para las celdas de la primera columna */
 td:first-child {
-    font-weight: bold; /* Hace que el texto de la primera columna sea negrita */
-}
-
-/* Cambia el color del texto para el tipo de medición "agua" */
-td:nth-child(4):contains("agua") {
-    color: #3498db;
-}
-
-/* Cambia el color del texto para el tipo de medición "luz" */
-td:nth-child(4):contains("luz") {
-    color: #f39c12;
+    font-weight: bold;
 }
