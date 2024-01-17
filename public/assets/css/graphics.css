@@ -19,8 +19,8 @@ input {
 }
 
 main {
-    width: 90%;
-    margin: 2% auto;
+    width: 95%;
+    margin: 1rem auto 0 auto;
     height: 90vh;
     display: flex;
     justify-content: center;

@@ -21,8 +21,8 @@
 
     <main>
 
-        <!-- Contenedor que renderiza el gráfico -->
-        <canvas id="myChart" width="400" height="400" />
+        <!-- Contenedor que renderiza el gráfico y permite modificar la resolución del gráfico -->
+        <canvas id="myChart" width="550" height="250"></canvas>
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -52,7 +52,8 @@
                     options: {
                         scales: {
                             y: {
-                                beginAtZero: true
+                                beginAtZero: true,
+                                max: 100
                             }
                         }
                     }
@@ -61,6 +62,18 @@
         </script>
 
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() 
+        {
+            setInterval(function() 
+                {
+                    // Redireccionar a la vista deseada.
+                    window.location.href = '{{ route('graphics.table') }}';
+                }, 
+            60000); // Intervalo de 10 segundos (60000 milisegundos).
+        });
+    </script>
 
     <!-- Carga la biblioteca gratuita Chart.js desde la red mediante un Content Delivery Network -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

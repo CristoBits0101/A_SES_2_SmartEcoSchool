@@ -43,4 +43,16 @@
         </table>
     </main>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() 
+        {
+            setInterval(function() 
+                {
+                    // Redireccionar a la vista deseada.
+                    window.location.href = '{{ route('graphics.bar') }}';
+                }, 
+            60000); // Intervalo de 10 segundos (60000 milisegundos).
+        });
+    </script>
+
 @endsection
