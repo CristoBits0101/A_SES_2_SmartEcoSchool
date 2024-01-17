@@ -1,0 +1,1 @@
+<!-- Histograma ('bar' con opciones específicas) -->

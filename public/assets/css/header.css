@@ -4,7 +4,7 @@ header {
     position: sticky;
     top: 0rem;
     z-index: 10;
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 
 img {
@@ -31,6 +31,10 @@ nav {
 
 nav > ul > li > a {
     text-decoration: none;
+}
+
+nav > ul > li {
+    padding: 0.25rem;
 }
 
 ul {
