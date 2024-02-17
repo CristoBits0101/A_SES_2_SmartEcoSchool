@@ -10,10 +10,10 @@ class SensorMeasurement extends Model
     use HasFactory;
 
     // Nombre de la tabla en la base de datos.
-    protected $table = 'sensor_measurements'; 
+    protected $table = 'sensor_measurements';
 
     // Atributos de la tabla que son asignables.
-    protected $fillable = 
+    protected $fillable =
     [
         'codigo_sensor' ,
         'fecha_medicion',
